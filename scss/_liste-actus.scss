@@ -1,0 +1,61 @@
+.liste-actus {
+    .actu {
+        padding: 30px;
+        text-align: center;
+        color: $black;
+        position: relative;
+        display: block;
+        margin-left: -($grid-gutter-width/2);
+        margin-right: -($grid-gutter-width/2);
+        
+        .mask {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $black;
+            opacity: 0;
+            z-index: 2;
+            transition: all 0.2s linear;
+        }
+        
+        figure {
+            padding: 15px;
+            img {
+                border-radius: 50%;
+            }
+        }
+        h2 {
+            color: $white;
+            font-size: 1.875rem;
+            margin-bottom: 15px;
+        }
+        .resume {
+            padding: 0 30px;
+            text-align: left;
+        }
+        svg {
+            background-color: $white;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            padding: 4px;
+            transform: rotate(-45Deg);
+            transition: all 0.2s linear;
+            path {
+                fill:theme-color('primary');
+            }
+        }
+        
+        &:hover {
+            .mask {
+                opacity: 0.3;
+            }
+            svg {
+                transform: rotate(45Deg);
+            }
+            
+        }
+    }
+}

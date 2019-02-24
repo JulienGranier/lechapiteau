@@ -1,0 +1,91 @@
+/*!
+ * Bootstrap v4.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+$enable-rounded: false;
+
+$font-family-base: 'Quicksand', sans-serif;
+$line-height-base: 1.4;
+
+$font-family-head: 'Montserrat Alternates', sans-serif;
+$headings-font-family:$font-family-head;
+$headings-font-weight: 700;
+$headings-margin-bottom: 0;
+
+$h1-font-size: 3.125rem;
+$h2-font-size: 3rem;
+$h3-font-size: 2.813rem;
+
+$font-weight-medium: 500;
+
+$container-max-widths: (
+  "xl": 1200px
+);
+
+$primary: #006993;
+$secondary: #f6c900;
+$tercery: #70b3a2;
+$gray-500: #dadadc;
+$gray-700: #c8c8c8;
+
+$theme-colors: (
+    "tercery": #70b3a2
+);
+
+$link-hover-decoration: none;
+
+$input-bg : transparent;
+$input-border-color: #000;
+$input-color: #000;
+$input-height : 30px;
+$input-line-height : 30px;
+
+$btn-active-box-shadow: none;
+$btn-focus-box-shadow: none;
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+//@import "code";
+@import "grid";
+//@import "tables";
+@import "forms";
+@import "buttons";
+//@import "transitions";
+//@import "dropdown";
+//@import "button-group";
+//@import "input-group";
+//@import "custom-forms";
+//@import "nav";
+//@import "navbar";
+//@import "card";
+//@import "breadcrumb";
+//@import "pagination";
+//@import "badge";
+//@import "jumbotron";
+//@import "alert";
+//@import "progress";
+//@import "media";
+//@import "list-group";
+//@import "close";
+//@import "modal";
+//@import "tooltip";
+//@import "popover";
+//@import "carousel";
+@import "utilities";
+//@import "print";
+
+
+@import "global";
+@import "hp";
+@import "preparez";
+@import "liste-actus";
+@import "single-actu";
+@import "contact";

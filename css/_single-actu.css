@@ -1,0 +1,4 @@
+.single-content {
+  -webkit-column-count: 2;
+  column-count: 2;
+  background: red; }

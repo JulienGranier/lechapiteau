@@ -1,0 +1,54 @@
+.home {
+    overflow-x: hidden;
+    .bandeau {
+        background: url("../img/bandeau-hp.jpg") no-repeat center;
+        background-size: cover;
+        height:168px;
+        
+        @include media-breakpoint-up(lg) {
+            height: 900px;
+        }
+        
+        img.logo {
+            width: 80px;
+            height: auto;
+            @include media-breakpoint-up(lg) {
+                width: auto;
+            }
+        }
+        
+        h1 {
+            color: $white;
+            font-size:0.75rem;
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 1.5rem;
+                font-size: $h1-font-size;
+            }
+        }
+        svg {
+            width: 15px;
+            height: 15px;
+            @include media-breakpoint-up(lg) {
+                width:58px;
+                height: 60px;
+            }
+        }
+    }
+    .hpleft {
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            right: 100px;
+            bottom:0
+        }
+    }
+    .hpright {
+        margin-top:45px;
+        width: 100%;
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            left: 100px;
+            bottom:0;
+            width: auto;
+        }
+    }
+}

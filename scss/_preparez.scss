@@ -1,0 +1,43 @@
+.liste-fiche {
+    div {
+        .fiche {
+            padding: 20px 0;
+            border-bottom: 1px solid theme-color('secondary');
+
+            h2 {
+                color:$black;
+                font-size:  1.875rem;
+                font-weight: 500;
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 20px;
+                &:before {
+                    width: 15px;
+                    height: 15px;
+                    display: inline-block;
+                    content: '';
+                    background-color: theme-color('secondary');
+                    border-radius: 50%;
+                    position: absolute;
+                    top:50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            a {
+                font-family: $font-family-head;
+                font-weight: 500;
+            }
+        }
+        &:last-child {
+            .fiche {
+                @include media-breakpoint-down(sm) {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
